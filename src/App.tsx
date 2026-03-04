@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import { Header } from "./components/header/header";
 import { Footer } from "./components/footer/footer";
@@ -14,37 +14,35 @@ import { Gallery } from "./pages/Gallery.tsx";
 
 function App() {
   return (
-    <Router basename="/art-portfolio-fullstack">
-      <div className="min-h-screen bg-white text-gray-900 flex flex-col">
-        
-        <Header />
+    <div className="min-h-screen bg-white text-gray-900 flex flex-col">
+      
+      <Header />
 
-        <main className="pt-20 flex-grow">
-          <Routes>
-            {/* HOME / LANDING */}
-            <Route
-              path="/"
-              element={
-                <>
-                  <Article />
-                  <HeroTitle />
-                  <ArtSection />
-                  <ArtSection2 />
-                </>
-              }
-            />
+      <main className="pt-20 flex-grow">
+        <Routes>
+          {/* HOME / LANDING */}
+          <Route
+            path="/"
+            element={
+              <>
+                <Article />
+                <HeroTitle />
+                <ArtSection />
+                <ArtSection2 />
+              </>
+            }
+          />
 
-            {/* KONTAKT */}
-            <Route path="/Galeria" element={<Gallery />} />
-            <Route path="/kontakt" element={<Kontakt />} />
-            <Route path="/O_mnie" element={<O_mnie />} />
-          </Routes>
-        </main>
+          {/* KONTAKT */}
+          <Route path="/Galeria" element={<Gallery />} />
+          <Route path="/kontakt" element={<Kontakt />} />
+          <Route path="/O_mnie" element={<O_mnie />} />
+        </Routes>
+      </main>
 
-        <Footer />
+      <Footer />
 
-      </div>
-    </Router>
+    </div>
   );
 }
 
