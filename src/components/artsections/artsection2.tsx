@@ -35,7 +35,7 @@ export const ArtSection2 = () => {
         {/* PRAWA STRONA */}
         <div>
           <img
-            src=".\src\img\p\20260215_082049.jpg"
+            src="/img/p/20260215_082049.jpg"
             alt="Dzieło sztuki"
             className="fade-image w-full h-[400px] object-cover rounded-2xl shadow-lg"
           />
