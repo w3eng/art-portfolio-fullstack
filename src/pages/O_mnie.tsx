@@ -63,7 +63,7 @@ export const O_mnie = () => {
         {/* PRAWA STRONA – Portret / obraz */}
         <div className="fade-about flex justify-center">
           <img
-            src=".\src\img\p\image.png"
+            src=".\img\p\image.png"
             alt="Portret artysty"
             className="w-full md:max-w-md h-auto object-cover rounded-2xl shadow-lg"
           />
