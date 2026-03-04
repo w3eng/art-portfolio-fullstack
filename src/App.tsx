@@ -11,7 +11,7 @@ import { Gallery } from "./pages/Gallery.tsx";
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-gray-900 flex flex-col">
+    <div className="min-h-screen bg-red-500 text-gray-900 flex flex-col">
       <Header />
       <main className="pt-20 flex-grow">
         <Routes>
