@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/main/', // <- ważne dla GitHub Pages
+  base: '/art-portfolio-fullstack/', // <- ważne dla GitHub Pages
 });

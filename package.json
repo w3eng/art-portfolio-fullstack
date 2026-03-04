@@ -5,9 +5,17 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "deploy": "gh-pages -d dist",
-    "build": "tsc -b && vite build",
+   
+
+
+
+  "dev": "vite",
+  "build": "vite build",
+  "predeploy": "vite build",
+  "deploy": "gh-pages -d dist",
+
+
+
     "lint": "eslint .",
     "preview": "vite preview"
   },
