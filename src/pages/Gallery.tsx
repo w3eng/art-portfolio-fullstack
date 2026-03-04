@@ -2,14 +2,15 @@ import { useRef, useLayoutEffect, useState } from "react";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
 
-const images = [
-  "./src/img/p/20260215_082049.jpg",
-  "./src/img/p/Screenshot_20250809-152343_Instagram.jpg",
-  "./src/img/p/Screenshot_20251003-191730_Instagram.jpg",
-  "./src/img/p/Screenshot_20251004-110804_Instagram.jpg",
-  "./src/img/p/Screenshot_20251208-125253_Instagram.jpg",
-  "./src/img/p/aedwadw.jpg",
-];
+// Import obrazów
+import img1 from "../img/p/20260215_082049.jpg";
+import img2 from "../img/p/Screenshot_20250809-152343_Instagram.jpg";
+import img3 from "../img/p/Screenshot_20251003-191730_Instagram.jpg";
+import img4 from "../img/p/Screenshot_20251004-110804_Instagram.jpg";
+import img5 from "../img/p/Screenshot_20251208-125253_Instagram.jpg";
+import img6 from "../img/p/aedwadw.jpg";
+
+const images = [img1, img2, img3, img4, img5, img6];
 
 const Lightbox = ({
   image,
@@ -83,7 +84,7 @@ export const Gallery = () => {
         ))}
       </div>
 
-      {/* PRZYCISK POWROTU */}
+      {/* Przycisk powrotu */}
       <div className="mt-20 text-center fade-gallery">
         <Link
           to="/"
@@ -94,7 +95,7 @@ export const Gallery = () => {
         </Link>
       </div>
 
-      {/* LIGHTBOX */}
+      {/* Lightbox */}
       {lightboxImage && (
         <Lightbox image={lightboxImage} onClose={() => setLightboxImage(null)} />
       )}
