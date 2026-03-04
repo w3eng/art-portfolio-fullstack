@@ -3,5 +3,10 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/art-portfolio-fullstack/', // <- konieczne dla GH Pages
+  base: '/art-portfolio-fullstack/',
+  build: {
+    rollupOptions: {
+      input: '/src/index.tsx',
+    },
+  },
 });

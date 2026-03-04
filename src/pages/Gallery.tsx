@@ -3,12 +3,12 @@ import { gsap } from "gsap";
 import { Link } from "react-router-dom";
 
 // Import obrazów
-import img1 from "../img/p/20260215_082049.jpg";
-import img2 from "../img/p/Screenshot_20250809-152343_Instagram.jpg";
-import img3 from "../img/p/Screenshot_20251003-191730_Instagram.jpg";
-import img4 from "../img/p/Screenshot_20251004-110804_Instagram.jpg";
-import img5 from "../img/p/Screenshot_20251208-125253_Instagram.jpg";
-import img6 from "../img/p/aedwadw.jpg";
+import img1 from "../img/p/4.jpg";
+import img2 from "../img/p/4.jpg";
+import img3 from "../img/p/4.jpg";
+import img4 from "../img/p/3.jpg";
+import img5 from "../img/p/2.jpg";
+import img6 from "../img/p/1.jpg";
 
 const images = [img1, img2, img3, img4, img5, img6];
 

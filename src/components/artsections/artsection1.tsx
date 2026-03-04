@@ -1,7 +1,7 @@
 import { useRef, useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
-import ArtImage from "../img/p/1_PDF Scanner 290126 7.51.21.jpg"; // ✅ wmontowany obraz
+import ArtImage from "../img/p/1.jpg"; // ✅ wmontowany obraz
 
 export const ArtSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
