@@ -22,7 +22,7 @@ function App() {
         <Routes>
           {/* HOME / LANDING */}
           <Route
-            path="/"
+            path="/art-portfolio-fullstack/"
             element={
               <>
                 <Article />
