@@ -1,6 +1,7 @@
 import { useRef, useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
+import ArtImage2 from "../img/p/20260215_082049.jpg"; // ✅ wmontowany obraz
 
 export const ArtSection2 = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -35,7 +36,7 @@ export const ArtSection2 = () => {
         {/* PRAWA STRONA */}
         <div>
           <img
-            src="/img/p/20260215_082049.jpg"
+            src={ArtImage2}
             alt="Dzieło sztuki"
             className="fade-image w-full h-[400px] object-cover rounded-2xl shadow-lg"
           />

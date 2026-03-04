@@ -1,6 +1,7 @@
 import { useRef, useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
+import Image12 from "../img/p/12.jpg"; // ✅ wmontowany obraz
 
 export const Article = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -52,7 +53,7 @@ export const Article = () => {
 
       {/* Zdjęcie */}
       <img
-        src="./src/img/p/12.jpg"
+        src={Image12}
         alt="Obraz"
         className="w-full max-h-[500px] object-cover rounded-2xl mx-auto shadow-lg"
       />
